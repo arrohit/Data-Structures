@@ -1,0 +1,8 @@
+def gap_insertion_sort(arr,start,gap):
+    pos=start
+    for j in range(start+gap,len(arr),gap):
+        while pos>=start and arr[pos]>arr[j]:
+            arr[pos+gap]=arr[pos]
+            pos=pos-gap
+        arr[pos+gap]=arr[j]
+    return arr
