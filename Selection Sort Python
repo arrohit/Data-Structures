@@ -1,0 +1,8 @@
+def insertion_sort(arr):
+    pos=0
+    for i in range(1,len(arr)):
+        while pos>=0 and arr[pos]>arr[i]:
+                arr[pos+1]=arr[pos]
+                pos=pos-1
+        arr[pos+1]=arr[i]
+    
